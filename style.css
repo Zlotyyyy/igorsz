@@ -36,6 +36,7 @@ header {
     align-items:center;
     box-shadow: 0 0 5px black;
     z-index:999;
+    user-select: none;
 }
 
 header img {
@@ -44,6 +45,11 @@ header img {
     float:left;
     border: limegreen 2px solid;
     box-shadow: 0 0 10px limegreen;
+    transition: 0.3s ease-in-out;
+}
+
+.ja:hover {
+    transform:scale(1.1);
 }
 
 header div {
@@ -62,6 +68,20 @@ header div h3 {
 header div a {
     text-align:center;
     display:block;
+    transition: 0.3s ease-in-out;
+}
+
+header div a:hover {
+    transform: scale(1.1);
+}
+
+header div h4 img, header div a img {
+    height:20px;
+    border: none;
+    box-shadow:none;
+    margin-left:-20px;
+    position:absolute;
+    border-radius:0%;
 }
 
 a {
@@ -107,7 +127,13 @@ li img {
     margin-top:10px;
 }
 
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:400px) {
+    header div h4 img, header div a img {
+        margin-left:-25px;
+    }
+}
+
+@media only screen and (min-width:900px) {
 
     header div {
         display:flex;
@@ -122,5 +148,13 @@ li img {
 
     li img {
         margin-top:20px;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    header div h4 img, header div a img {
+        height:30px;
+        margin-left:-35px;
+        margin-top:-5px;
     }
 }
