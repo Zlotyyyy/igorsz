@@ -19,7 +19,7 @@ body {
 
 .frontheader {
     width:100%;
-    height:10vh;
+    height:90px;
     background-image:linear-gradient(45deg,#121212,#123412);
     padding:10px;
     box-shadow: 0 0 5px #123412;
@@ -29,7 +29,7 @@ header {
     background-color: rgba(0,0,0,0.5);
     display:flex;
     width:100%;
-    height:10vh;
+    height:90px;
     position:fixed;
     top:0;
     padding:10px;
