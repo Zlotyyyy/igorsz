@@ -87,7 +87,7 @@ header div h4 img, header div a img {
 a {
     text-decoration:none;
     color:orangered;
-    background-image: linear-gradient(90deg, transparent, limegreen, transparent);
+    background-image: linear-gradient(90deg, transparent, orangered, transparent);
     background-size: 0% 1px;
     background-repeat: no-repeat;
     background-position:bottom;
@@ -149,8 +149,19 @@ li img {
     li img {
         margin-top:20px;
     }
+    ul hr {
+        display:none;
+    }
+    
+    li {
+        width:30%;
+        float:left;
+        height:21.5vw;
+        border-top: limegreen 2px solid;
+        margin: 2% 0.5%;
+    }
+    
 }
-
 @media only screen and (min-width:1000px) {
     header div h4 img, header div a img {
         height:30px;
