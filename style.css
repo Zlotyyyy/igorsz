@@ -117,6 +117,7 @@ hr {
 
 ul hr {
     margin: 20px 0;
+    width:90%;
 }
 
 ul {
@@ -163,13 +164,14 @@ li img {
     }
     ul hr {
         display:none;
+
     }
     
     li {
         width:30%;
         float:left;
         height:21.5vw;
-        border-top: limegreen 2px solid;
+        border-top: green 2px solid;
         margin: 2% 0.5%;
     }
     
