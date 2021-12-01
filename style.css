@@ -18,11 +18,10 @@ body {
     color:  limegreen;
     font-family:lato;
     text-shadow: 0 0 3px green;
-    height:100vh;
 }
 @keyframes intro {
-    0% {transform: scale(0.1);}
-    100% {transform:scale(1)}
+    0% {transform: scale(0.1);height:100vh;}
+    100% {transform:scale(1);height:100%;}
 }
 .frontheader {
     width:100%;
@@ -54,7 +53,6 @@ header::before {
     opacity: 0.4;
     background-image: url(tlo.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     z-index:-1;
   }
