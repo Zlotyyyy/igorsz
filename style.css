@@ -2,6 +2,7 @@
 * {
     margin:0;
     padding:0;
+    transition: 0.3s ease-in-out
 }
 html {
     animation: intro 1s ease-in-out;
@@ -26,13 +27,10 @@ body {
 .frontheader {
     width:100%;
     height:90px;
-    background-image:linear-gradient(45deg,#121212,#123412);
     padding:10px;
-    box-shadow: 0 0 5px #123412;
 }
 
 header {
-    background-color: rgba(0,0,0,0.5);
     display:flex;
     width:100%;
     height:90px;
@@ -44,6 +42,22 @@ header {
     z-index:999;
     user-select: none;
 }
+
+header::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-image: url(tlo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index:-1;
+  }
 
 header img {
     height:100%;
@@ -74,7 +88,6 @@ header div h3 {
 header div a {
     text-align:center;
     display:block;
-    transition: 0.3s ease-in-out;
 }
 
 header div a:hover {
@@ -98,6 +111,7 @@ a {
     background-repeat: no-repeat;
     background-position:bottom;
     transition: 0.2s ease-in-out;
+    text-shadow: 0 0 3px orangered;
 }
 a:hover {
     background-size: 100% 1px;
@@ -133,7 +147,7 @@ li img {
     width:80%;
     margin: 0 auto;
     margin-top:10px;
-    margin-left:4.2%;
+    margin-left:5%;
     border-radius:20px;
     display:block;
     border: 2px solid limegreen;
@@ -164,6 +178,7 @@ li img {
     }
     ul hr {
         display:none;
+
     }
     
     li {
@@ -180,5 +195,14 @@ li img {
         height:30px;
         margin-left:-35px;
         margin-top:-5px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    header div h4, header div a {
+        font-size:20px;
+    }
+    header div h4 img, header div a img {
+        margin-top:-2px;
     }
 }
