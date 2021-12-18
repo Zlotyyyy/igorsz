@@ -6,6 +6,7 @@
 }
 html {
     animation: intro 1s ease-in-out;
+    overflow:hidden;
 }
 html, body {
     max-width: 100%;
@@ -14,7 +15,9 @@ html, body {
 }
 
 body {
-    background:#121212;
+    background:url(snow3.gif),url(winter.webp);
+    background-size:100 none;
+    background-position:center 40%;
     color:  limegreen;
     font-family:lato;
     text-shadow: 0 0 3px green;
@@ -24,6 +27,7 @@ body {
     0% {transform: scale(0.1);}
     100% {transform:scale(1);}
 }
+
 .frontheader {
     width:100%;
     height:90px;
@@ -41,9 +45,10 @@ header {
     box-shadow: 0 0 5px black;
     z-index:999;
     user-select: none;
+    background:rgba(0,0,0,0.5);
 }
 
-header::before {
+/* header::before {
     content: ' ';
     display: block;
     position: absolute;
@@ -56,7 +61,7 @@ header::before {
     background-repeat: no-repeat;
     background-size: cover;
     z-index:-1;
-  }
+  } */
 
 header img {
     height:100%;
@@ -102,6 +107,50 @@ header div h4 img, header div a img {
     border-radius:0%;
 }
 
+kula1, kula2, kula3, kula4, kula5, kula6 {
+    width:30vw;
+    height:30vw;
+    position:absolute;
+    background:radial-gradient(#dedede,white,#dedede,transparent 71%);
+    /* box-shadow:0 0 10px #dedede; */
+    border-radius:50%;
+    scroll-snap-stop: 300px;
+}
+
+kula1 {
+    bottom:-23vw;
+    left:-13vw;
+}
+
+kula2 {
+    bottom:-24vw;
+    left:0vw;
+    width:50vw;
+}
+
+kula3 {
+    bottom:-24vw;
+    left:25vw;
+    width:50vw;
+}
+
+kula4 {
+    bottom:-23vw;
+    left:50vw;
+    width:80vw;
+}
+kula5 {
+    bottom:-26vw;
+    left:30vw;
+    width:80vw;
+}
+
+kula6 {
+    bottom:-16vw;
+    left:90vw;
+    width:40vw;
+}
+
 a {
     text-decoration:none;
     color:orangered;
@@ -116,15 +165,30 @@ a:hover {
     background-size: 100% 1px;
 }
 
+/* h1 {
+    position:sticky;
+    top:114px;
+}
+
+h2 {
+    position:sticky;
+    top:158px;
+} */
+
 h1, h2 {
     text-align:center;
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 10px #121212,0 0 10px #121212;
 }
 
 hr {
-    background-color:green;
+    background:linear-gradient(45deg,white,red,white);
+    background-size: 11.11% 2px;
+    background-repeat:repeat no-repeat;
+    animation: greenlinear 30s linear infinite;
     border:none;
     height:2px;
-    width:80%;
+    width:100%;
     margin:10px auto;
 }
 
@@ -138,8 +202,16 @@ ul {
     font-size:20px;
 }
 
-li a {
+li {
+    padding:10px 0;
+}
+
+li a:first-child{
     text-align:center;
+    background: rgba(0,0,0,0.6);
+    border-radius:15px;
+    padding: 0 10px 5px 10px;
+    box-shadow: 0 0 10px #121212,0 0 10px #121212;
 }
 
 li img {
@@ -150,6 +222,15 @@ li img {
     border-radius:20px;
     display:block;
     border: 2px solid limegreen;
+}
+
+@keyframes greenlinear {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 300% 0%;
+    }
 }
 
 @media only screen and (min-width:400px) {
@@ -184,10 +265,13 @@ li img {
         width:30%;
         float:left;
         height:21.5vw;
-        border-top: green 2px solid;
+        background:linear-gradient(45deg,white,limegreen,white);
+        background-size: 33.33% 2px;
+        background-repeat:repeat no-repeat;
+        background-position: top;
         margin: 2% 0.5%;
+        animation: greenlinear 10s infinite linear;
     }
-    
 }
 @media only screen and (min-width:1000px) {
     header div h4 img, header div a img {
