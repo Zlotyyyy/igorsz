@@ -48,6 +48,8 @@ header {
     background:rgba(0,0,0,0.5);
 }
 
+/* To nizej w razie zdjecia w tle menu */
+
 /* header::before {
     content: ' ';
     display: block;
@@ -107,7 +109,9 @@ header div h4 img, header div a img {
     border-radius:0%;
 }
 
-/* kula1, kula2, kula3, kula4, kula5, kula6 {
+/* Tu kule ktore sa zepsute bo wychodza za ekran */
+
+kula1, kula2, kula3, kula4, kula5, kula6 {
     width:30vw;
     height:30vw;
     position:absolute;
@@ -148,7 +152,7 @@ kula6 {
     bottom:-16vw;
     left:90vw;
     width:40vw;
-} */
+}
 
 a {
     text-decoration:none;
@@ -163,6 +167,8 @@ a {
 a:hover {
     background-size: 100% 1px;
 }
+
+/* Position Sticky dla kategorii np. strony z lekcji, inne strony, wykorzystam w przyszlosci jak bedzie wiecej stron */
 
 /* h1 {
     position:sticky;
