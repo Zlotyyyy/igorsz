@@ -109,9 +109,9 @@ header div h4 img, header div a img {
     border-radius:0%;
 }
 
-/* Tu kule ktore sa zepsute bo wychodza za ekran */
+/* Tu kule ktore sa zepsute bo wychodza za ekran na telefonie */
 
-kula1, kula2, kula3, kula4, kula5, kula6 {
+/* kula1, kula2, kula3, kula4, kula5, kula6 {
     width:30vw;
     height:30vw;
     position:absolute;
@@ -152,7 +152,7 @@ kula6 {
     bottom:-16vw;
     left:90vw;
     width:40vw;
-}
+} */
 
 a {
     text-decoration:none;
