@@ -15,9 +15,9 @@ html, body {
 }
 
 body {
-    background:url(snow3.gif),url(winter.webp);
-    background-size:100 none;
-    background-position:center 40%;
+    background:url(autumn.jpg), #121212;
+    background-size:100% none;
+    background-position:center;
     color:  limegreen;
     font-family:lato;
     text-shadow: 0 0 3px green;
@@ -108,52 +108,6 @@ header div h4 img, header div a img {
     position:absolute;
     border-radius:0%;
 }
-
-/* Tu kule ktore sa zepsute bo wychodza za ekran na telefonie */
-
-/* kula1, kula2, kula3, kula4, kula5, kula6 {
-    width:30vw;
-    height:30vw;
-    position:absolute;
-    background:radial-gradient(#dedede,white,#dedede,transparent 71%);
-    border-radius:50%;
-    scroll-snap-stop: 300px;
-}
-
-kula1 {
-    bottom:-23vw;
-    left:-13vw;
-}
-
-kula2 {
-    bottom:-24vw;
-    left:0vw;
-    width:50vw;
-}
-
-kula3 {
-    bottom:-24vw;
-    left:25vw;
-    width:50vw;
-}
-
-kula4 {
-    bottom:-23vw;
-    left:50vw;
-    width:80vw;
-}
-kula5 {
-    bottom:-26vw;
-    left:30vw;
-    width:80vw;
-}
-
-kula6 {
-    bottom:-16vw;
-    left:90vw;
-    width:40vw;
-} */
-
 a {
     text-decoration:none;
     color:orangered;
@@ -187,10 +141,9 @@ h1, h2 {
 }
 
 hr {
-    background:linear-gradient(45deg,white,red,white);
+    background:orangered;
     background-size: 11.11% 2px;
     background-repeat:repeat no-repeat;
-    animation: greenlinear 30s linear infinite;
     border:none;
     height:2px;
     width:100%;
@@ -226,16 +179,7 @@ li img {
     margin-left:5%;
     border-radius:20px;
     display:block;
-    border: 2px solid limegreen;
-}
-
-@keyframes greenlinear {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 300% 0%;
-    }
+    border: 2px solid orangered;
 }
 
 @media only screen and (min-width:400px) {
@@ -270,12 +214,11 @@ li img {
         width:30%;
         float:left;
         height:21.5vw;
-        background:linear-gradient(45deg,white,limegreen,white);
+        background:linear-gradient(orangered,orangered);
         background-size: 33.33% 2px;
         background-repeat:repeat no-repeat;
         background-position: top;
         margin: 2% 0.5%;
-        animation: greenlinear 10s infinite linear;
     }
 }
 @media only screen and (min-width:1000px) {
